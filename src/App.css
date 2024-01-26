@@ -1,0 +1,61 @@
+.App {
+    text-align: center;
+    min-height: 100vh; /* Asegura que la altura mínima sea la del viewport */
+    max-height: 100vh; /* Asegura que la altura máxima sea la del viewport */
+    overflow: hidden;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #F2F8FD; /* Cambia el color de fondo */
+    min-height: 100vh;
+    max-height: 100vh; /* Asegura que la altura máxima sea la del viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fade-transition {
+    transition: opacity 2s ease-in-out;
+    opacity: 0; /* Inicia invisible */
+  }
+  
+.fade-transition.show {
+    opacity: 1;
+}
+
+.logo-responsive {
+    /* width: 40vw; Hace que el logo sea el 20% del ancho del viewport */
+    /* max-width: 1000px; Opcional: establece un máximo para no ser demasiado grande en pantallas grandes */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); Centra la imagen exactamente en el medio */
+}

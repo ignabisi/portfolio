@@ -1,0 +1,41 @@
+{
+  "name": "ignabisiapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ui5/cra-template-webcomponents-react": "1.23.0",
+    "@ui5/webcomponents-react": "^1.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^3.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "cypress run --component --browser chrome",
+    "eject": "react-scripts eject",
+    "test:open": "cypress open --component --browser chrome"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@ui5/webcomponents-cypress-commands": "latest",
+    "cypress": "^12.1.0"
+  }
+}
