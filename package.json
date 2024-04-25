@@ -18,7 +18,7 @@
   "scripts": {
     "prebuild": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "cypress run --component --browser chrome",
     "eject": "react-scripts eject",
     "test:open": "cypress open --component --browser chrome"
