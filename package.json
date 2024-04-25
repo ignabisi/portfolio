@@ -16,6 +16,7 @@
   },
   "main": "/index.js",
   "scripts": {
+    "prebuild": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "cypress run --component --browser chrome",
